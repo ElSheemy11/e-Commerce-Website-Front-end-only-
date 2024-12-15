@@ -1,7 +1,7 @@
 E-Commerce Web Application
 This is a simple e-commerce website front-end built using HTML, CSS, and JavaScript. It features a clean and responsive design for an online shopping experience, allowing users to browse products and interact with the website using basic web technologies.
 
-Features
+**** Features ****
 
 Responsive Design: Optimized for various screen sizes, providing a smooth experience on mobile, tablet, and desktop devices.
 
@@ -13,7 +13,7 @@ Interactive User Interface: Using JavaScript, the app supports interactions like
 
 Modern UI: The design utilizes modern CSS techniques such as Flexbox and Grid to create an aesthetically pleasing layout.
 
-Technologies Used
+**** Technologies Used **** 
 
 HTML: Used for the basic structure of the webpage.
 
@@ -21,13 +21,13 @@ CSS: Used to style and layout the components and make the website responsive.
 
 JavaScript: Adds interactivity, including functions like adding items to the cart and updating the cart total.
 
-How to Run
+**** How to Run **** 
 
 Clone the repository to your local machine:
 
-bash
+**** bash **** 
 
-Copy code
+Copy code >>
 
 git clone https://github.com/ElSheemy11/e-Commerce-Website-Front-end-only-.git
 
