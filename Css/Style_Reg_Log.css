@@ -1,0 +1,498 @@
+/* Start Global Rules */
+*{
+    transition: 0.2s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    padding: 20px 20px;
+    position: relative;
+}
+
+body {
+  font-family: comic sans ms;
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* End Global Rules */
+/* Start Main Login Page */
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../Images/login\ background.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: animebg 5s linear infinite;
+}
+
+.card1 {
+  width: 406px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 12px;
+  position: fixed;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transition: 0.5s;
+}
+
+.card1.active {
+  height: 625px;
+  transition: 0.s;
+  width: 480px;
+}
+
+.card1 .register {
+  position: absolute;
+  right: -100%;
+  opacity: 0;
+  transition: 0.45s;
+}
+.card1.active .register {
+  right: 0;
+  opacity: 1;
+  padding: 50px;
+}
+
+.card1 .login2 {
+  left: 0;
+  opacity: 1;
+  transition: 0.45s;
+  padding: 10px 20px;
+}
+
+.card1.active .login2 {
+  left: -100%;
+  opacity: 0;
+}
+
+@media (max-width:480px){
+  .login .card1 {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    align-items: center;
+  }
+  
+}
+
+.login .card1 .logo {
+
+} 
+
+.mb-3 {
+  margin: 0 !important;
+}
+
+.login .card1 h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.login .card1 h3 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login .card1 .btnsub {
+    width: 100%;
+    margin: 15px 0;
+    background-color: white;
+    color: black;
+    transition: 0.2s ;
+} 
+
+.login .card1 .btnsub:hover {
+  transform: scale(0.95);
+}
+
+.form-control {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.form-label {
+  transform: translate(10px, -30px);
+}
+
+.label3 {
+    position: absolute;
+      left: 50px;
+      top: 160px;
+      }
+
+.form-control {
+  padding: 0 35px 0 0;
+} 
+
+.input1:focus+.label1,
+.input2:focus+.label2,
+.input3:focus+.label3 {
+  transform: translate(10px, -55px);
+}
+
+.input1:focus,
+.input2:focus,
+.input3:focus{
+  color: rgb(255, 255, 255);
+}
+
+.form-text {
+  transform: translateY(-30px);
+  color: white;
+  font-size: 12px;
+}
+
+.login .card1 .form-icon i {
+  position: absolute;
+  right: 6%;
+  color: white;
+  font-size: 1.2em;
+  line-height: 60px;
+
+}
+
+.pain {
+  transform: translate(0);
+}
+
+.login .card1 .divider {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.login .card1 span {
+    width: 100%;
+    padding: 0 11px;
+}
+
+.login .card1 .divider span::before , .login .card1 .divider span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #e3e3e3;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44%;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.login .card1 .divider span::after {
+    right: 0;
+}
+
+.login .card1 .divider span::before {
+    left: 0;
+}
+
+.login .card1 .sicons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    gap: 1%;
+
+}
+
+.login .card1 .sicons a img {
+    width: 34px;
+}
+.login .card1 .sicons a {
+    padding: 16px;
+    width: 125px;
+    text-align: center;
+    font-size: 23px;
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.login .card1 .sicons a:hover {
+    transform: scale(0.9);
+    background-color: #ebebeb;
+    box-shadow: inset 0px -1px 0px #b5b5b5, inset -1px 0px 0px #e3e3e3, inset 1px 0px 0px #e3e3e3, inset 0px 1px 0px #e3e3e3;
+    color: #303030;
+}
+
+.login .card1 .sicons a:first-child i {
+    color: #4a4a4a;
+}
+
+.login .card1 .sicons a:last-child i {
+    color: #1977f3;
+}
+
+.card1 form p {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.card1 form p a{
+    color: #65a6fa;
+    cursor: pointer;
+}
+
+.card1 form p a:last-child:hover > i{
+    color: #59a0fd;
+    transform: translateX(3px);
+    animation: bounce-right 1.5s infinite;
+}
+.login-link {
+  animation: bounce-right 2s infinite;
+}
+.register-link {
+  animation: bounce-left 2s infinite;
+}
+p:has(.register-link) {
+  text-align: end;
+}
+/* End Main Login Page */
+
+
+.container-mo-blr {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  margin: 100px auto;
+  border-radius: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
+  transform: translateY(-120px);
+  cursor: pointer;
+}
+
+.dot {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  top: 25px;
+  left: 25px;
+  opacity: 0.1;
+  transition: all 0.75s cubic-bezier(.71,0,.33,1.56) 0ms;
+  line-height: 51%;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.dot i{
+  color: rgb(255, 255, 255);
+}
+
+.move .dot {
+  transform: rotate(360deg);
+  border-radius: 10%;
+  left: 225px;
+  background: #1977f3;
+}
+
+.dot.two {
+  transition-delay: 3ms;
+}
+.dot.three {
+  transition-delay: 6ms;
+}
+.dot.four {
+  transition-delay: 9ms;
+}
+.dot.five {
+  transition-delay: 11ms;
+}
+.dot.six {
+  transition-delay: 14ms;
+}
+.dot.seven {
+  transition-delay: 17ms;
+}
+.dot.eight {
+  transition-delay: 20ms;
+}
+.dot.nine {
+  transition-delay: 23ms;
+}
+.dot.ten {
+  transition-delay: 26ms;
+}
+.dot.eleven {
+  transition-delay: 29ms;
+}
+.dot.twelve {
+  transition-delay: 32ms;
+}
+.dot.thirteen {
+  transition-delay: 35ms;
+}
+.dot.fourteen {
+  transition-delay: 38ms;
+}
+.dot.fifteen {
+  transition-delay: 41ms;
+}
+.dot.sixteen {
+  transition-delay: 44ms;
+}
+.dot.seventeen {
+  transition-delay: 47ms;
+}
+.dot.eighteen {
+  transition-delay: 50ms;
+}
+.dot.nineteen {
+  transition-delay: 53ms;
+}
+.dot.twenty {
+  transition-delay: 56ms;
+}
+/* End Main Login Page */
+/* Start Gallery */
+
+/* End Gallery */
+/* Start KeyFrames */
+  @keyframes bounce-right {
+    0% {
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateX(15px);
+              transform: translateX(15px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateX(7.5px);
+              transform: translateX(7.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateX(3.5px);
+              transform: translateX(3.5px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-left {
+      0% {
+        transform: translateX(-30px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+      }
+  
+      24% {
+        opacity: 1;
+      }
+  
+      40% {
+        transform: translateX(-15px);
+        animation-timing-function: ease-in;
+      }
+  
+      65% {
+        transform: translateX(-7.5px);
+        animation-timing-function: ease-in;
+      }
+  
+      82% {
+        transform: translateX(-6.5px);
+        animation-timing-function: ease-in;
+      }
+  
+      93% {
+        transform: translateX(-4px);
+        animation-timing-function: ease-in;
+      }
+  
+      25%,
+      55%,
+      75%,
+      87%,
+      98% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+      }
+  
+      100% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+      }
+    }
+  @keyframes animebg {
+    100%{
+      backdrop-filter: hue-rotate(360deg);
+    }
+  }
+/* End KeyFrames */

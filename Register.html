@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="./Css/all.min.css">
+  <link rel="stylesheet" href="./Css/Normalize.CSS">
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/Style_Reg_Log.css">
+</head>
+
+<body>
+  <div class="login">
+    <div class="shant">
+      <div class="card1">
+        <!-- Start Login -->
+        <div class="container-fluid login2">
+          <form>
+            <div class="mb-3">
+              <h1>Log in</h1>
+              <h3>Continue to ShopO</h3>
+
+              <span class="form-icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" class="form-control input1" id="logemail" aria-describedby="emailHelp" />
+              <label for="exampleInputEmail1" class="form-label label1">Email</label>
+
+              <span class="form-icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" id="logpass" class="form-control input2"
+                aria-describedby="passwordHelpBlock" />
+              <label for="inputPassword5" class="form-label label2">Password</label>
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and
+                numbers, and must not contain spaces, special characters, or
+                emoji.
+              </div>
+            </div>
+            <a href="./Homepage.html" class="btn btn-primary btnsub">
+              Continue With Email
+            </a>
+            <p>
+              New To ShopO?<br>
+              <a href="#" class="register-link" style="font-weight: bold;">
+                GET STARTED<i class="fa-solid fa-arrow-right"></i></a>
+            </p>
+          </form>
+        </div>
+        <!-- End Login -->
+
+        <!-- Start Register -->
+        <div class="container-fluid register">
+          <form>
+            <div class="mb-3">
+              <h1>Registeration</h1>
+              <h3>We Are Happy To Have You Among Us </h3>
+
+              <span class="form-icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="userName" class="form-control input3" aria-label="Username" aria-describedby="basic-addon1">
+              <label for="exampleInputEmail1" class="form-label label1 label3">UserName</label>
+        <div id="emailHelp" class="form-text" style="transform: translate(0);
+    margin-bottom: 16px;">
+          Please, Write Your Real Name .
+        </div>
+              <span class="form-icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email"  class="form-control input1" id="reg_email" aria-describedby="emailHelp" />
+              <label for="exampleInputEmail1" class="form-label label1">Email</label>
+              <div id="emailHelp" class="form-text" style="margin-bottom: -19px;">
+                We'll never share your email with anyone else.
+              </div>
+
+              <span class="form-icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" id="reg_pass" class="form-control input2"
+                aria-describedby="passwordHelpBlock" />
+              <label for="inputPassword5" class="form-label label2">Password</label>
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and
+                numbers, and must not contain spaces, special characters, or
+                emoji.
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" required id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                I Agree On terms And & conditions
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btnsub" id="userInf" onclick="userData()">
+              Register
+            </button>
+            <br />
+            <p>
+              Already Have an Account?<br>
+              <a href="#" class="login-link"><i class="fa-solid fa-arrow-left">Login Now!</i></a>
+
+            </p>
+          </form>
+        </div>
+        <!-- End Register -->
+      </div>
+      <!-- <div class="container-mo-blr" id="change">
+                <div class="dot one"><br>
+                         <div class="container-fluid">
+                  <form>
+                    <div class="login-card-header">
+                      <img src="" alt="">
+                    </div>
+                    <div class="mb-3">
+                      <h1>Log in</h1>
+                      <h3>Continue to ShopO We Are Happy to Have you Among Us!</h3>
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                  <button type="submit" class="btn btn-primary btnsub">Continue With Email</button>
+                  <br>
+                  <div class="divider">
+                  <span>Or</span>
+                  </div>
+                  <br>
+                  <div class="sicons">
+                    <a href="#"><i class="fa-brands fa-apple"></i></a>
+                    <a href="#"><img src="./Images/Google_Icons-09-512.webp" alt=""></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                  <p>New To ShopO? <a onclick="go()"> Get Started <i class="fa-solid fa-arrow-right"></i></a> </p>
+                </form>
+              </div>
+              <footer>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </footer></div>
+
+      <div class=".container-mo-blr register" id="change2"">
+                <div class="dot one register"><br>       <div class="container-fluid">
+                  <form>
+                    <div class="login-card-header">
+                      <img src="" alt="">
+                    </div>
+                    <div class="mb-3">
+                      <h1>Log in</h1>
+                      <h3>Continue to ShopO</h3>
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                  <button type="submit" class="btn btn-primary btnsub">Continue With Email</button>
+                  <br>
+                  <div class="divider">
+                  <span>Or</span>
+                  </div>
+                  <br>
+                  <div class="sicons">
+                    <a href="#"><i class="fa-brands fa-apple"></i></a>
+                    <a href="#"><img src="./Images/Google_Icons-09-512.webp" alt=""></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                  <p>New To ShopO? <a onclick="go()"> Get Started <i class="fa-solid fa-arrow-right"></i></a> </p>
+                </form>
+              </div>
+              <footer>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </footer></div>
+
+      </div>
+      </div> -->
+    </div>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/Log_Reg.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Page</title>
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <link rel="stylesheet" href="../Css/Normalize.CSS" />
+    <link rel="stylesheet" href="../Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Prod-page.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href=""><img src="../Images/logo.png" alt="" /></a>
+        </div>
+        <div class="h-input">
+          <input type="text" placeholder="Search Product..." name="" id="" />
+          <button>All Categories<i class="fa-solid fa-angle-down"></i></button>
+          <button>Search</button>
+        </div>
+        <div class="h-icons">
+          <a href="#"><i class="fa-solid fa-code-compare"></i><span></span></a>
+          <a href="#"><i class="fa-regular fa-heart"></i><span></span></a>
+          <a href="#" class="cart-icon"
+            ><i class="fa-solid fa-bag-shopping"></i><span id="bubble"></span
+          ></a>
+          <a href="./Register.html"
+            ><i class="fa-solid fa-user"></i><span></span
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start header-2 -->
+    <div class="header-2 hidden-B">
+      <div class="container">
+        <ul>
+          <li><a href="../Homepage.html">Home</a></li>
+          <li><a href="../About Us Page/About Us.html">About</a></li>
+          <li><a href="../Blog page/Blog.html">Blog</a></li>
+          <li><a href="../Services page/service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End header-2 -->
+    <!-- Start Cart Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-close">
+        <i class="fa-solid fa-close"></i>
+      </div>
+      <div class="cart-menu">
+        <h3>My Cart</h3>
+        <div class="cart-items"></div>
+      </div>
+      <div class="sidebar--footer">
+        <div class="total--amount">
+          <h5>Total</h5>
+          <div class="cart-total">$0.00</div>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <!-- End Cart Sidebar -->
+    <!-- Start Product Page -->
+    <div class="product-Page">
+      <div class="container">
+        <span class="link-route">
+          <a href="../Homepage.html">Home</a> > <a href="#">prod</a>
+        </span>
+      </div>
+      <div class="container">
+        <section id="prod-page">
+          <!-- Product Page Image** -->
+          <div class="prod-page-image">
+           <iframe title="Gaming Headset - Kotion Each G2000" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3fb7ca4f5e564b62a4c0f261da23ef57/embed?autospin=1&autostart=1&camera=0"> </iframe>
+          </div>
+          <!-- Details** -->
+          <div class="prod-page-details">
+            <!-- Title -->
+            <strong class="card-title">HeadSet</strong>
+            <span class="product-category"> Pc - Headsets </span>
+            <!-- Price -->
+            <div class="price">$18.73</div> <del>$20</del>
+            <!-- Details -->
+             <P class="small-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio doloremque vel aut temporibus laudantium debitis rerum unde quae soluta quis quisquam cum nesciunt ducimus sed, dolor eum. Iure, similique?</P>
+             <!-- options -->
+              <div class="prod-options">
+                <span>color's</span>
+                <!-- color-option-container -->
+                <div class="prod-color-options">
+
+                    <!-- Color-box -->
+                    <div class="prod-color-box">
+                        <input type="checkbox" id="blue" value="blue">
+                        <label for="blue">
+                            <img src="../Images/Colors of prod/blue.jpg" alt="">
+                        </label>
+                    </div>
+ 
+
+                    <!-- Color-box -->
+                    <div class="prod-color-box">
+                        <input type="checkbox" id="red" value="red">
+                        <label for="red">
+                            <img src="../Images/Colors of prod/red.jpg" alt="">
+                        </label>
+                    </div>
+ 
+                </div>
+              </div>
+              <!--==Discount==-->
+               <span class="prod-page-offer"><i class="fa-solid fa-tag"></i> 15% Discount</span>
+               <!-- ==Cart-btns== -->
+                <div class="cart-btns">
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                    <a href="#" class="add-to-cart buy-now">Buy Now</a>
+                </div>
+                <!--==Price-And-Shipping==-->
+                <div class="price-shipping">
+                    <strong>20$ <span>+ 1$ Shipping</span></strong>
+                </div>
+          </div>
+        </section>
+        <!--============Product-All-Info============-->
+        <section class="prod-all-info">
+            <!-- **Menu************ -->
+             <ul class="prod-info-menu">
+                 <li class="prod-info-list active" data-filter="highlights">Highlights</li>
+                 <li class="prod-info-list" data-filter="materials">Materials</li>
+                 <li class="prod-info-list" data-filter="howuse">How to use</li>
+                 <li class="prod-info-list" data-filter="protips">Pro Tips</li>
+            </ul>
+            <!--== Info-Container ==-->
+            <div class="info-container highlights">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illum distinctio, autem ipsam a nobis iste temporibus maxime consequuntur ex labore aut reprehenderit tenetur delectus suscipit unde. Corrupti, quasi harum?</p>
+            </div>
+            <!--== Info-Container ==-->
+            <div class="info-container materials">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illum distinctio, autem ipsam a nobis iste temporibus maxime consequuntur ex labore aut reprehenderit tenetur delectus suscipit unde. Corrupti, quasi harum?</p>
+            </div>
+            <!--== Info-Container ==-->
+            <div class="info-container howuse">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illum distinctio, autem ipsam a nobis iste temporibus maxime consequuntur ex labore aut reprehenderit tenetur delectus suscipit unde. Corrupti, quasi harum?</p>
+            </div>
+            <!--== Info-Container ==-->
+            <div class="info-container protips">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illum distinctio, autem ipsam a nobis iste temporibus maxime consequuntur ex labore aut reprehenderit tenetur delectus suscipit unde. Corrupti, quasi harum?</p>
+            </div>
+        </section>
+    </div>
+    </div>
+    <!-- End Product Page -->
+
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="./prod-page.js"></script>
+  </body>
+</html>

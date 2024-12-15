@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>
+
+        name:<script>
+            document.write(localStorage.getItem("name"))
+            <document.write(localStorage.getItem("email"))
+        </script>
+        <button onclick="logout()">Log Out</button>
+    </h1>
+    <script>
+        function logout(){
+            localStorage.removeItem("name")
+          window.location.href='./log.html'
+        }
+    </script>
+</body>
+</html>

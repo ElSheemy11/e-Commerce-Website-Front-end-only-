@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="email" id="email" name="email" /><br />
+      <input type="password" id="password" name="password" /><br />
+      <button type="button" onclick="savedata()" id="savedate">sUBMIT</button>
+    </form>
+    <script>
+      function savedata() {
+        let email, password;
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+        let users_arr = new Array();
+        users_arr = JSON.parse(localStorage.getItem("users"))
+          ? JSON.parse(localStorage.getItem("users"))
+          : [];
+          if(users_arr.some((v)=>{
+            return v.email==email && v.password==password
+          })){
+            alert("Login sucsses")
+            let currentUser=users_arr.filter((v)=>{
+              return v.email==email&&v.password==password
+
+            })[0]
+            localStorage.setItem("name",currentUser.name);
+            localStorage.setItem("email",currentUser.email);
+            window.location.href="./prof.html"
+          }else{
+            alert("Login Fail")
+          }
+      }
+    </script>
+  </body>
+</html>
