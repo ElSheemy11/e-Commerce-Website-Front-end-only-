@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addToCartButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
             const item = {
-                name: document.querySelectorAll('.prod-page-details')[index].textContent,
+                name: document.querySelectorAll('.card .card-title')[index].textContent,
                 price: parseFloat(document.querySelectorAll('.price')[index].textContent.slice(1),
             ),
             quantity: 1,
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         cartIcon.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
+            sidebar.classList.add('open');
         });
         
         const closeButton = document.querySelector('.sidebar-close');
@@ -91,43 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 // End Cart
 
-// Start Display Cart
-var cartIcon = document.querySelector('.cart-icon')
-cartIcon.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
+// Start Scroll Animation 
+const observer = new IntersectionObserver((enteries) => {
+    enteries.forEach((entry) => {
+        console.log (entry)
+entry.target.classList.toggle('show', entry.isIntersecting);
+    });
 });
 
-const closeButton = document.querySelector('.sidebar-close');
-closeButton.addEventListener('click', () => {
-    sidebar.classList.remove('open')
-})
-// End Display Cart
-
-// Start Only One Color Selected 
-$(document).ready(function(){
-    $('input:checkbox').click(function(){
-        $('input:checkbox').not(this).prop('checked', false)  
-    })
-})
-// End Only One Color Selected 
-
-//Start Product Menu Info 
-$(document).on('click','.prod-info-menu li', function(){
-    $(this).addClass('active').siblings().removeClass('active')
-});
-//End Product Menu Info 
-
-// Start Product Info Filter
-$(document).ready(function(){
-    $('.prod-info-list').click(function(){
-        const value = $(this).attr('data-filter');
-        if( value == 'all'){
-            $('.info-container').filter('.'+value).show('1000')
-        }
-        else {
-            $('.info-container').not('.'+value).hide('1000')
-            $('.info-container').filter('.'+value).show('1000')
-        }
-    })
-
-})
+const hiddenElements1 = document.querySelectorAll('.hidden-B')
+const hiddenElements2 = document.querySelectorAll('.hidden-R')
+const hiddenElements3 = document.querySelectorAll('.hidden-L')
+hiddenElements1.forEach((el)=> observer.observe(el));
+hiddenElements2.forEach((el)=> observer.observe(el));
+hiddenElements3.forEach((el)=> observer.observe(el));
+// End Scroll Animation 
